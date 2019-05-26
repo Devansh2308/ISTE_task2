@@ -320,14 +320,7 @@ border-radius: 10%;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+
 
 /* The dots/bullets/indicators */
 .dot {
@@ -337,11 +330,11 @@ border-radius: 10%;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
-  display: block;
+  display: inline-block;
   transition: background-color 0.6s ease;
   top: 160px;
-  left: 98%;
-  top: -120px;
+  left: 10%;
+  top: 150px;
 }
 
 .active {
@@ -418,6 +411,11 @@ border-radius: 10%;
 	}
 	.container .text{
 		font-size: 1.35em;
+	}
+	.dot{
+		position: relative;
+        top: -250px;
+        left:-5px;
 	}
 }
 
