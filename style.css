@@ -429,7 +429,7 @@ border-radius: 10%;
 
 	}
 	 .container .text{
-    	font-size: 1em;
+    	font-size: 0.7em;
     	margin-left: 10px;
     	top: -90px;
     }
@@ -438,6 +438,7 @@ border-radius: 10%;
 @media only screen and (max-width: 400px) {
 	.mySlides img{
 		width: 350px;
+		height: 350px;
   position: relative;
   margin: auto;
   top: -430px;
