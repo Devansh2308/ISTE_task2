@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>ISTE TASK 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onresize="resize()">
+	<!--Particle js animation files and javascript files-->
+		<div id="particles-js">
+			<script type="text/javascript"  src="particles.js"></script>
+			<script type="text/javascript"  src="app.js"></script>
+			<script type="text/javascript"  src="index.js"></script>
+
+		</div>
+	<!--Header with logo of ISTE ,Text and toggle menu (which appears on resizing)-->
+			<div class="container">
+				<div class="img">&nbsp;&nbsp;&nbsp;&nbsp;<img src="ASSETS\download.png" 		style="width:100px;height:100px";>
+				</div>
+				<div class="text"> INDIAN SOCIETY OF TECHNICAL EDUCATION</div>
+			</div>
+	<!--Adding functionality to Toggle menu using javascript -->
+			<div class="container"><div class="menuitems" onclick="myFunction(this);myFunctio();myFunction3();">
+            	<div class="menu1" id="m1" ></div>
+            	<div class="menu2" id="m2"></div>
+            	<div class="menu3" id="m3" ></div>
+
+            </div>
+            
+
+<!--Popup navigation bar which appears when window size is less than 800px-->
+                    <div class="d" id="pop">
+  					<div class="popup" id="myPopup">
+  <span class="popuptext" ><br><br>NAVIGATION MENU<br><br><br>
+  							<div class="it">		 <li>   <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Home</li><br>
+  										<li><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;About</li><br>
+  										<li><i class="fa fa-child" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Events</li><br>
+  										<li><i class="fa fa-picture-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Gallery</li><br>
+  										<li><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Team</li><br>
+  										<li><i class="fa fa-address-book" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact</li></div></span>
+</div>
+</div>
+		<!--Navigation Bar when size of window is greater than 800px-->
+				
+            <ul >
+				<div class="listitems">
+					<div class="home">
+						<li><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Home</li><br><br></div>
+					<li><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;About</li><br><br>
+					<li><i class="fa fa-child" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Events</li><br><br>
+            		<li><i class="fa fa-picture-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Gallery</li><br><br>
+					<li><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Team</li><br><br>
+					<li>&nbsp;&nbsp;&nbsp;<i class="fa fa-address-book" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				</div>
+			</ul>
+
+
+			<!---slideshow----->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="ASSETS/a.jpg" >
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="ASSETS/d.jpg" >
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="ASSETS/e.jpg" >
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span><br> 
+  <span class="dot"></span> <br>
+  <span class="dot"></span> <br>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script> 
+		
+</body>
+
+</html>
