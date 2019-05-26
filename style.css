@@ -273,7 +273,7 @@ ul li{
 }
 @media screen and (max-width:450px ){
 .container .text{
-	font-size: 2em;
+	font-size: 1.35em;
 }
 
 }
@@ -414,7 +414,38 @@ border-radius: 10%;
   left: 100px;
 
 	}
+	.container .text{
+		font-size: 1.35em;
+	}
 }
 
+@media only screen and (max-width: 500px) {
+	.mySlides img{
+		width: 400px;
+  position: relative;
+  margin: auto;
+  top: -430px;
+  left: 100px;
+
+	}
+	 .container .text{
+    	font-size: 1em;
+    	margin-left: 10px;
+    	top: -90px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+	.mySlides img{
+		width: 350px;
+  position: relative;
+  margin: auto;
+  top: -430px;
+  left: 100px;
+
+	}
+
+
+}
 
 
